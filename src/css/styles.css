@@ -1,0 +1,161 @@
+:root {
+    --light: white;
+}
+
+@media (max-width: 300px) {
+  #dwidget {
+    width: 150px;
+    height: 200px;
+    }
+  }
+  
+  
+  @media (max-width: 500px) {
+  #dwidget {
+    width: 250px;
+    height: 550px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+  #dwidget {
+    width: 450px;
+    height: 550px;
+    }
+  }
+
+  @media (min-width: 200px) {
+    #dwidget {
+      width: 100px;
+      height: 550px;
+    }
+  }
+
+  @media (min-width: 100px) {
+    #dwidget {
+      width: 50px;
+      height: 550px;
+    }
+  }
+
+
+@media (min-width: 300px) {
+    #dwidget {
+      width: 200px;
+      height: 550px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    #dwidget {
+      width: 350px;
+      height: 550px;
+    }
+  }
+
+  @media (min-width: 800px) {
+    #dwidget {
+      width: 650px;
+      height: 700px;
+    }
+  }
+  
+@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed");
+
+
+
+
+
+body {
+    background: black;
+    height: 170px;
+background-color: white;
+
+}
+
+.center {
+    position: absolute;
+    top: 90%;
+    transform: translate(0, -50%);
+}
+
+.text text {
+    paint-order: stroke;
+    stroke: var(--light);
+    stroke-width: 0.15px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    font-size: 1rem;
+    font-family: "Cabin Condensed", sans-serif;
+}
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #3e8ddb;
+}
+.container{
+  max-width: 550px;
+  margin: 0 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 40px 40px;
+  border-radius: 12px;
+  /* transform: scale(); */
+}
+.container p{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+.container p a{
+  position: relative;
+  text-decoration: none;
+}
+.container p  a span{
+  position: absolute;
+  white-space: nowrap;
+  padding: 6px 15px;
+  background: #5082e2;
+  border-radius: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  top: -44px;
+  left: 50%;
+  transform: translate(-40% , -20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container p a:hover span{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50% , 0);
+}
+.container p span::before{
+  content: ' ';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #5082e2;
+  bottom: -6px;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%) rotate(45deg);
+}
+.container p a:hover{
+  text-decoration: underline;
+}
+
+      
